@@ -65,14 +65,12 @@ function displayMovieList(movies) {
 }
 
 function info() {
-    console.log('clicked info');
     resetBar();
     loadMovieDetails();
     searchList.classList.add('hide-search-list');
 }
 
 function fav(data) {
-    console.log('clicked fav');
     makeFavList(data.parentNode.dataset.poster);
 }
 
@@ -93,7 +91,6 @@ function favButtonStyle() {
 }
 
 function enterFavPage() {
-    console.log(isEntering);
     if (isEntering) {
         favButtonStyle();
         isEntering = false;
